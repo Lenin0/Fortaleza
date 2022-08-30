@@ -1,0 +1,319 @@
+
+@font-face {
+    font-family: 'interstatebold';
+    src: url('../../../assets/fonts/interstate-bold-webfont.woff2') format('woff2'),
+         url('../../../assets/fonts/interstate-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'interstateregular';
+    src: url('../../../assets/fonts/interstate-regular-webfont.woff2') format('woff2'),
+         url('../../../assets/fonts/interstate-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'le_murmure_regularregular';
+    src: url('../../../assets/fonts/le-murmure-webfont.woff2') format('woff2'),
+         url('../../../assets/fonts/le-murmure-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/**/
+
+// scss-docs-start import-stack
+// Configuration
+
+@import "functions";
+@import "theme-variables";
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+
+// Layout & components
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+//@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+//@import "card";
+@import "accordion";
+//@import "breadcrumb";
+//@import "pagination";
+//@import "badge";
+//@import "alert";
+//@import "progress";
+//@import "list-group";
+//@import "close";
+//@import "toasts";
+@import "modal";
+//@import "tooltip";
+//@import "popover";
+@import "carousel";
+@import "spinners";
+//@import "offcanvas";
+//@import "placeholders";
+
+// Helpers
+@import "helpers";
+
+// Utilities
+@import "utilities/api";
+// scss-docs-end import-stack
+
+
+.banner{
+    background-image : url('/img/bg.jpg');
+    background-color: #e5e600;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.banner img{
+    position: relative;
+    right: 150px;
+}
+
+.banner h2{
+    color:#003e7e;;
+    margin-top: 40%;
+    font-family: Noto Sans, sans-serif;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.subtitulo-nassau{
+    color:#003e7e;;
+    margin-top: 0;
+    font-family: Noto Sans, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.novo-predio{
+    background-color: #003e7e;
+    width: 71%;
+    margin-top: 0;
+    margin-left: 150px;
+    margin-right: 200px;
+    text-align: center;
+    margin-block-end:50px;
+    border-radius: 50px 0px 50px;
+}
+
+.novo-predio h2{
+    position: relative;
+    left: 50px;
+    color:#87cefa;;
+    margin-top: 40%;
+    font-family: Noto Sans, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+ 
+.subtitulo-predio{
+    position: relative;
+    left: 50px;
+    margin-top:0;
+    color:#fff;
+    font-family: Noto Sans, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    
+}
+
+.predio{
+    position: relative;
+    width: 300px;
+    left: 70px;
+    top: 45px;    
+}
+
+
+.simbolo{ 
+    position: relative;
+    width: 20px;
+    left: 190px;
+    top: 80px;
+}
+
+.icones{
+    margin-left: 300px;
+    margin-block-end:50px;
+ }
+
+.nossa-historia{
+    width: 71%;
+    margin-left: 150px;
+    margin-right: 50px;
+    background-color: #003e7e;
+    border-radius: 50px 0px 50px;
+    
+}
+
+.nossa-historia h4, .nossa-historia p{
+    background-color: #e5e600;
+    border-radius: 0px 30px 0px;
+
+}
+
+.galeria-video{
+    background-color: #e5e600;
+    width: 100%;
+    margin-top: 0;
+}
+
+
+
+.galeria-video h2{
+    color: #003e7e;
+    font-family: Noto Sans, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: 27%;
+    margin-top: 15px;
+    
+}
+
+.embed-container {
+    position: relative;
+    left: 15%;
+    top: 70px;
+}
+
+.galeria-video p{
+    text-align: center;
+    width: 70%;
+    color: #003e7e;
+    font-family: sans-serif;
+    font-size: 14px; 
+    margin-top: 40px;
+}
+
+.rodape{
+    text-align: center;
+    color: #003e7e;
+    font-size: 40px;
+    
+}
+
+/*---------------------
+    ANIMAÇÕES
+------------------------*/
+[data-animation]:not(.highlight) {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.cs-hidden {
+    height: 1px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
+}
+
+
+// -----------------------
+//      BOTOTES
+//------------------------
+
+
+
+// -----------------------
+//      NAVBAR
+//------------------------
+
+.navbar-nav{
+    float: right;
+}
+
+.navbar-nav li{
+    display: inline-block;
+    margin: 0 15px;
+
+}
+
+@include media-breakpoint-up(md) { 
+   
+}
+
+@include media-breakpoint-up(lg) { 
+   
+
+}
+
+// -----------------------
+//      FOOTER
+//------------------------
+
+#main-footer{
+    background-color: #003e7e;
+}
+
+#main-footer img{
+    width: 300px;
+    position:relative;
+    right: 40%;
+    
+}
+ .botao-inscricao{
+    text-align: center;
+ }
+// -----------------------
+//      BANNER
+//------------------------
+
+
+// -----------------------
+//      SECTIONS BASE
+//------------------------
+
+// -----------------------
+//      SOBRE
+//------------------------
+
+
+
+
+@include media-breakpoint-up(md) {
+    
+
+}
+
+// -----------------------
+//      EQUIPE
+//------------------------
+
+
+@include media-breakpoint-up(md) { 
+  
+}
+
